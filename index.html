@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volodymyr Oleksovskyi | UX/UI Designer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">Volodymyr Oleksovskyi</div>
+        <div class="header-right">
+            <span>UX/UI Design</span>
+            <span>Graphic Design</span>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="text-content">
+            <h2>Hi! I’m Vova</h2>
+            <p>Focused on building seamless design systems and intuitive web experiences.</p>
+            <p>Email: <a href="mailto:volodymyr.oleksovskyi@gmail.com">volodymyr.oleksovskyi@gmail.com</a></p>
+            <p>Resume: <a href="https://drive.google.com/file/d/1z48ps1f1y1l_S3JwXMK_KaXFRfShzuWw/view?usp=sharing" target="_blank">View Resume</a></p>
+        </div>
+        <img src="./assets/avatar.jpeg" alt="Volodymyr's Photo">
+    </section>
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <div class="project-info">
+                    <h3>MusicCore</h3>
+                    <p>App for concert searching</p>
+                    <p><strong>Timeline:</strong> January 15 - February 1</p>
+                    <p><strong>Role:</strong> UX/UI Designer</p>
+                    <p><strong>Solution:</strong> A centralized app for discovering concerts, new music, and artists.</p>
+                    <p><a href="https://drive.google.com/file/d/1iGmYZRTZHt2elKX46VjlzpeUjPJakC9o/view?usp=sharing" target="_blank">View Interactive Prototype</a></p>
+                </div>
+                <img src="./assets/project-img.jpeg" alt="MusicCore Promo">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Contact: <a href="mailto:volodymyr.oleksovskyi@gmail.com">volodymyr.oleksovskyi@gmail.com</a></p>
+        <p>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+            <a href="#">Dribbble</a>
+        </p>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function() {
+            document.querySelector("header").classList.toggle("scrolled", window.scrollY > 50);
+        });
+
+        document.querySelector(".container").addEventListener("click", function() {
+            window.location.href = "projects.html";
+        });
+    </script>
+</body>
+</html>
